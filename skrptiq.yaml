@@ -1,0 +1,39 @@
+# --- Identity ---
+name: "customer-support-flow"
+display_name: "Customer Support Flow"
+description: "Classifies customer intent and drafts appropriate responses"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/customer-support-flow"
+
+# --- Discovery (Hub) ---
+category: "developer"
+tags:
+  - "support"
+  - "triage"
+  - "customer-service"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "anthropic-claude"
+  permissions: []
+  data_handling: []
+
+# --- Contents ---
+contents:
+  skills: 2
+  prompts: 2
+  workflows: 1
+  services: 0
+  sources: 1
+  documents: 0
+  assets: 0
+  total: 6
