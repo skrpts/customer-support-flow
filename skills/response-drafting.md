@@ -5,7 +5,7 @@ title: Response Drafting
 description: "Generates empathetic, on-brand responses to customer enquiries"
 tags: [Tested]
 connections:
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
   - target: customer-tone-guide
     type: references

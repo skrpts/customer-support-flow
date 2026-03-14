@@ -23,7 +23,7 @@ tags:
 # --- Security & Access ---
 requires:
   services:
-    - "anthropic-claude"
+    []
   permissions: []
   data_handling: []
 

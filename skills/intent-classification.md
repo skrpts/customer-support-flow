@@ -5,7 +5,7 @@ title: Intent Classification
 description: "Analyses text input and classifies it into intent categories"
 tags: [Tested]
 connections:
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
 ---
 
