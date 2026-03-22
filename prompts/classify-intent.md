@@ -28,4 +28,4 @@ Return a JSON object with `intent` (string) and `confidence` (0-1).
 
 ## User Message
 
-{{message}}
+{{input.customer_message}}

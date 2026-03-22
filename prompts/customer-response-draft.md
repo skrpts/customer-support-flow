@@ -30,14 +30,14 @@ You are a customer support agent. Draft a professional, empathetic response to t
 
 ## Tone Guide
 
-{{tone_guide}}
+Refer to the attached tone guide for voice and style guidance.
 
 ## Detected Intent
 
-{{intent}}
+Using the intent classification from the previous stage.
 
 ## Customer Message
 
-{{message}}
+Use the customer message passed through from the intent classification stage.
 
 ## Your Response
