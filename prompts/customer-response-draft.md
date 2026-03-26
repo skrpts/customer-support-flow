@@ -34,10 +34,10 @@ Refer to the attached tone guide for voice and style guidance.
 
 ## Detected Intent
 
-Using the intent classification from the previous stage.
+{{steps.classify-intent.output}}
 
 ## Customer Message
 
-Use the customer message passed through from the intent classification stage.
+{{input.customer_message}}
 
 ## Your Response

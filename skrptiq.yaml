@@ -2,7 +2,7 @@
 name: "customer-support-flow"
 display_name: "Customer Support Flow"
 description: "Classifies customer intent and drafts appropriate responses"
-version: "1.2.0"
+version: "1.3.0"
 engine: ">=1.0.0"
 
 # --- Attribution ---
