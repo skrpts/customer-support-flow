@@ -13,6 +13,10 @@ connections:
     type: uses
   - target: customer-response-draft
     type: uses
+  - target: tone-adaptation
+    type: uses
+  - target: structured-data-extraction
+    type: uses
 ---
 
 ## Overview

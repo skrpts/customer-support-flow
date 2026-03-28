@@ -9,6 +9,8 @@ connections:
     type: runs_on
   - target: customer-tone-guide
     type: references
+  - target: brand-guidelines
+    type: references
 ---
 
 ## Capability
