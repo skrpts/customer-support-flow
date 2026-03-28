@@ -17,6 +17,8 @@ connections:
     type: uses
   - target: structured-data-extraction
     type: uses
+  - target: llm-service
+    type: runs_on
 ---
 
 ## Overview

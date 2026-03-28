@@ -11,18 +11,18 @@ connections:
 
 ## Capability
 
-Extracts structured fields and key-value pairs from unstructured customer messages, including order numbers, product names, dates, and issue descriptions.
+Extracts structured fields and key-value pairs from unstructured text input such as code review comments, commit messages, and PR descriptions.
 
 ## When to Use
 
-- Parsing customer messages for key details (order IDs, product names, dates)
-- Structuring complaint data for routing and tracking
-- Extracting actionable information from freeform support tickets
+- Parsing structured information from freeform code review output
+- Extracting severity levels, file paths, and line numbers from analysis results
+- Converting unstructured findings into actionable data
 
 ## Inputs
 
-Unstructured customer message or support ticket text
+Unstructured text containing embedded data points
 
 ## Outputs
 
-Structured key-value pairs: customer details, issue category, referenced products/orders, dates mentioned
+Structured key-value pairs, categorised findings, and extracted metadata
