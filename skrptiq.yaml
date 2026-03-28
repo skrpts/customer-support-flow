@@ -1,4 +1,5 @@
 # --- Identity ---
+id: "5e72be97-5711-4825-a83c-a35078ab6959"
 name: "customer-support-flow"
 display_name: "Customer Support Flow"
 description: "Classifies customer intent and drafts appropriate responses"
