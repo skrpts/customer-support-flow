@@ -19,6 +19,12 @@ connections:
     type: uses
   - target: llm-service
     type: runs_on
+  - target: brand-guidelines
+    type: references
+  - target: customer-tone-guide
+    type: references
+  - target: company-style-guide
+    type: references
 ---
 
 ## Overview
