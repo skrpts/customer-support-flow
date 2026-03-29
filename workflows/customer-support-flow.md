@@ -3,7 +3,7 @@ type: workflow
 id: customer-support-flow
 title: Customer Support Flow
 description: "Classifies customer intent and drafts an appropriate response"
-tags: [Production]
+tags: [Production, utility:classification, writing:communication]
 connections:
   - target: intent-classification
     type: uses

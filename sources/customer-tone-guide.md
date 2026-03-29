@@ -3,7 +3,7 @@ type: source
 id: customer-tone-guide
 title: Customer Tone Guide
 description: "Reference to the company's customer communication tone and style guidelines"
-tags: [Production]
+tags: [Production, utility:classification, writing:communication]
 connections: []
 ---
 
