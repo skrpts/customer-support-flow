@@ -3,7 +3,7 @@ type: prompt
 id: classify-intent
 title: Classify Intent
 description: "Core prompt for classifying customer message intent"
-tags: [Production, utility:classification, writing:communication]
+tags: [Production, Automation, Communication]
 connections:
   - target: intent-classification
     type: derived_from

@@ -3,7 +3,7 @@ type: skill
 id: response-drafting
 title: Response Drafting
 description: "Generates empathetic, on-brand responses to customer enquiries"
-tags: [Tested, utility:classification, writing:communication]
+tags: [Tested, Communication, Automation]
 connections:
   - target: llm-service
     type: runs_on

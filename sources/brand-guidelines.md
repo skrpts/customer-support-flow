@@ -3,7 +3,7 @@ type: source
 id: brand-guidelines
 title: Brand Guidelines
 description: "Reference document defining brand voice, visual identity, and communication standards"
-tags: [Production, communication:narrative, utility:classification]
+tags: [Production, Communication, Automation]
 connections: []
 ---
 

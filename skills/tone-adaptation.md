@@ -3,7 +3,7 @@ type: skill
 id: tone-adaptation
 title: Tone Adaptation
 description: "Rewrites text to match a specified tone whilst preserving meaning"
-tags: [Tested, communication:narrative, utility:classification]
+tags: [Tested, Communication, Automation]
 connections:
   - target: llm-service
     type: runs_on

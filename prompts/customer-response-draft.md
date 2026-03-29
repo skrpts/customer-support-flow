@@ -3,7 +3,7 @@ type: prompt
 id: customer-response-draft
 title: Customer Response Draft
 description: "Task prompt for drafting professional customer support responses"
-tags: [Production, writing:communication, utility:classification]
+tags: [Production, Communication, Automation]
 connections:
   - target: intent-classification
     type: derived_from
