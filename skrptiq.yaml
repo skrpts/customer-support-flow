@@ -3,7 +3,7 @@ id: "5e72be97-5711-4825-a83c-a35078ab6959"
 name: "customer-support-flow"
 display_name: "Customer Support Flow"
 description: "Classifies customer intent and drafts appropriate responses"
-version: "1.0.2"
+version: "1.0.3"
 engine: ">=1.0.0"
 
 # --- Attribution ---
