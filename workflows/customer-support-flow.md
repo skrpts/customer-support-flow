@@ -25,6 +25,8 @@ connections:
     type: references
   - target: company-style-guide
     type: references
+  - target: markdown-formatting
+    type: uses
 ---
 
 ## Overview
