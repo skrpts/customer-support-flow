@@ -25,6 +25,10 @@ connections:
     type: references
   - target: company-style-guide
     type: references
+  - target: format-conversion
+    type: uses
+  - target: pii-masking
+    type: uses
 ---
 
 ## Overview
