@@ -9,10 +9,6 @@ connections:
     type: uses
   - target: response-drafting
     type: uses
-  - target: classify-intent
-    type: uses
-  - target: customer-response-draft
-    type: uses
   - target: tone-adaptation
     type: uses
   - target: structured-data-extraction
