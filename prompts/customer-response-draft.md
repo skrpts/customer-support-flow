@@ -34,7 +34,7 @@ Refer to the attached tone guide for voice and style guidance.
 
 ## Detected Intent
 
-{{steps.Intent Classification.output}}
+{{steps.previous.output}}
 
 ## Customer Message
 
