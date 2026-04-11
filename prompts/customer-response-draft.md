@@ -4,6 +4,13 @@ id: customer-response-draft
 title: Customer Response Draft
 description: "Task prompt for drafting professional customer support responses"
 tags: [Production, Communication, Automation]
+inputs:
+  customer_message:
+    label: "Customer Message"
+    description: "The customer message or support ticket to respond to"
+    example: "[Paste the customer email or message here]"
+    required: true
+    type: text
 connections:
   - target: intent-classification
     type: derived_from

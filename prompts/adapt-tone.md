@@ -4,6 +4,13 @@ id: adapt-tone
 title: "Adapt Tone"
 description: "Rewrites text to match a specified tone whilst preserving meaning"
 tags: [Production, Writing]
+inputs:
+  target_tone:
+    label: "Target Tone"
+    description: "The desired tone for the output"
+    example: "Formal and professional"
+    required: true
+    type: text
 connections:
   - target: tone-adaptation
     type: derived_from

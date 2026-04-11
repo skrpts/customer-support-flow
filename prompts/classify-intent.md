@@ -4,6 +4,13 @@ id: classify-intent
 title: Classify Intent
 description: "Core prompt for classifying customer message intent"
 tags: [Production, Automation, Communication]
+inputs:
+  customer_message:
+    label: "Customer Message"
+    description: "The customer message or support ticket to respond to"
+    example: "[Paste the customer email or message here]"
+    required: true
+    type: text
 connections:
   - target: intent-classification
     type: derived_from
