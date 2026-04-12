@@ -50,8 +50,11 @@ Change:
 
 Do NOT add new information or remove existing content. The meaning should be identical; only the delivery changes.
 
+### Output
+
+Return the COMPLETE rewritten text — the entire document with the new tone applied throughout. Do not return a list of changes or a before/after comparison. The output should be the finished text, ready to use.
+
 ## Formatting Rules
 
 - Use British English throughout
-- Be specific and actionable — no vague recommendations
-- Structure output clearly with headings, tables, or lists as appropriate
+- Preserve the original document structure (headings, lists, formatting)
