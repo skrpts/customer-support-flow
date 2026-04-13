@@ -30,19 +30,16 @@ execution:
     step_type: "synthesis"
   - skill: "response-drafting"
     step_type: "generation"
-    input_from: "intent-classification"
+  - parallel:
+    - skill: "structured-data-extraction"
+      step_type: "synthesis"
   - skill: "tone-adaptation"
     step_type: "content"
-    input_from: "response-drafting"
-  - skill: "structured-data-extraction"
-    step_type: "synthesis"
-    input_from: "response-drafting"
-  - skill: "format-conversion"
-    step_type: "content"
-    input_from: "tone-adaptation"
+  - parallel:
+    - skill: "format-conversion"
+      step_type: "content"
   - skill: "pii-masking"
     step_type: "content"
-    input_from: "format-conversion"
 ---
 
 ## Overview
