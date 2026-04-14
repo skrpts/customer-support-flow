@@ -25,6 +25,14 @@ connections:
     type: uses
   - target: pii-masking
     type: uses
+output_step: "tone-adaptation"
+composite_steps:
+  - "intent-classification"
+  - "response-drafting"
+  - "tone-adaptation"
+  - "structured-data-extraction"
+  - "format-conversion"
+  - "pii-masking"
 execution:
   - skill: "intent-classification"
     step_type: "synthesis"
