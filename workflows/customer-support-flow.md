@@ -38,14 +38,12 @@ execution:
     step_type: "synthesis"
   - skill: "response-drafting"
     step_type: "generation"
-  - parallel:
-    - skill: "structured-data-extraction"
-      step_type: "synthesis"
   - skill: "tone-adaptation"
     step_type: "content"
-  - parallel:
-    - skill: "format-conversion"
-      step_type: "content"
+  - skill: "structured-data-extraction"
+    step_type: "synthesis"
+  - skill: "format-conversion"
+    step_type: "content"
   - skill: "pii-masking"
     step_type: "content"
 ---
