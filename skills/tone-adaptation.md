@@ -4,6 +4,12 @@ id: tone-adaptation
 title: Tone Adaptation
 description: "Rewrites text to match a specified tone whilst preserving meaning"
 tags: [Tested, Communication, Automation]
+context_params:
+  target_tone:
+    label: "Target Tone"
+    description: "The desired tone for the output"
+    default: "Professional and approachable"
+    required: false
 connections:
   - target: llm-service
     type: runs_on

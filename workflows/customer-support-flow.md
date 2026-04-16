@@ -40,8 +40,12 @@ execution:
     step_type: "generation"
   - skill: "tone-adaptation"
     step_type: "content"
+    context:
+      target_tone: "Professional and approachable"
   - skill: "structured-data-extraction"
     step_type: "synthesis"
+    context:
+      extraction_fields: ""
   - skill: "format-conversion"
     step_type: "content"
   - skill: "pii-masking"
