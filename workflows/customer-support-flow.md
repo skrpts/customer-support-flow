@@ -21,11 +21,13 @@ connections:
     type: references
   - target: company-style-guide
     type: references
+  - target: language-polish
+    type: uses
   - target: format-conversion
     type: uses
   - target: pii-masking
     type: uses
-output_step: "tone-adaptation"
+output_step: "language-polish"
 composite_steps:
   - "intent-classification"
   - "response-drafting"
@@ -36,12 +38,15 @@ composite_steps:
 execution:
   - skill: "intent-classification"
     step_type: "synthesis"
+    prompt: "classify-intent"
   - skill: "response-drafting"
     step_type: "generation"
   - skill: "tone-adaptation"
     step_type: "content"
     context:
       target_tone: "Professional and approachable"
+  - skill: "language-polish"
+    step_type: "content"
   - skill: "structured-data-extraction"
     step_type: "synthesis"
     context:
