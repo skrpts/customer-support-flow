@@ -40,14 +40,18 @@ execution:
     step_type: "synthesis"
     prompt: "classify-intent"
   - skill: "response-drafting"
+    prompt: "customer-response-draft"
     step_type: "generation"
   - skill: "tone-adaptation"
+    prompt: "adapt-tone"
     step_type: "content"
     context:
       target_tone: "Professional and approachable"
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
   - skill: "structured-data-extraction"
+    prompt: "extract-structured-data"
     step_type: "synthesis"
     context:
       extraction_fields: ""
