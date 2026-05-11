@@ -50,6 +50,9 @@ execution:
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    context:
+      voice_profile: ""
+      grammar_strictness: ""
   - skill: "structured-data-extraction"
     prompt: "extract-structured-data"
     step_type: "synthesis"
