@@ -51,17 +51,17 @@ execution:
     prompt: "polish-language"
     step_type: "content"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
   - skill: "structured-data-extraction"
     prompt: "extract-structured-data"
     step_type: "synthesis"
     context:
-      extraction_fields: ""
+      extraction_fields: "Key findings, dates, names, action items"
   - skill: "format-conversion"
-    step_type: "content"
+    step_type: "local.transform"
   - skill: "pii-masking"
-    step_type: "content"
+    step_type: "local.transform"
 ---
 
 ## Overview
