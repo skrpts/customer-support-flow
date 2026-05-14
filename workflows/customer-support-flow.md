@@ -78,6 +78,18 @@ Invoke the **intent-classification** skill to analyse the customer message and d
 
 Invoke the **response-drafting** skill using the classified intent and customer tone guide to generate an empathetic, on-brand response ready for human review.
 
+### Stage 3: Language Polish
+
+Surface-level cleanup: spelling, grammar, punctuation, and sentence clarity on the drafted response.
+
+### Stage 4: Data Extraction
+
+Extract structured data from the conversation: key findings, dates, names, and action items for CRM logging.
+
+### Stage 5: Format Conversion + PII Masking
+
+Convert the output to the required format and mask any personally identifiable information before storage or handoff.
+
 ## Output
 
 A draft customer response containing:
