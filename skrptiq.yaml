@@ -3,7 +3,7 @@ id: "5e72be97-5711-4825-a83c-a35078ab6959"
 name: "customer-support-flow"
 display_name: "Customer Support Flow"
 description: "Classifies customer intent and drafts appropriate responses"
-version: "1.1.23"
+version: "1.1.25"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -17,9 +17,9 @@ repository: "https://github.com/skrpts/customer-support-flow"
 # --- Discovery (Hub) ---
 category: "developer"
 tags:
+  - "customer-service"
   - "support"
   - "triage"
-  - "customer-service"
 
 # --- Security & Access ---
 requires:
