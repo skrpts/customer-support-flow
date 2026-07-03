@@ -39,29 +39,36 @@ execution:
   - skill: "intent-classification"
     step_type: "synthesis"
     prompt: "classify-intent"
+    output: { name: "intent", type: "text" }
   - skill: "response-drafting"
     prompt: "customer-response-draft"
     step_type: "generation"
+    output: { name: "draft_response", type: "text" }
   - skill: "tone-adaptation"
     prompt: "adapt-tone"
     step_type: "content"
+    output: { name: "toned_response", type: "text" }
     context:
       target_tone: "Professional and approachable"
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_response", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
   - skill: "structured-data-extraction"
     prompt: "extract-structured-data"
     step_type: "synthesis"
+    output: { name: "structured_data", type: "json" }
     context:
       extraction_fields: "Key findings, dates, names, action items"
   - skill: "format-conversion"
     step_type: "local.transform"
+    output: { name: "formatted_response", type: "text" }
   - skill: "pii-masking"
     step_type: "local.transform"
+    output: { name: "masked_response", type: "text" }
 ---
 
 ## Overview

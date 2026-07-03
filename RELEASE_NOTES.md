@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.28
+GH#745 — declare per-step `output: {name, type}` on every execution step (intent/text, draft_response/text, toned_response/text, polished_response/text, structured_data/json, formatted_response/text, masked_response/text). Lights up the #744 rich flow-map. Content-only; no bindings or logic changes.
+
 ## v1.1.27
 GH#645 Row 3b — migrate to K-037 dep-referenced schema. Strip 14 inline shared-content files and declare 14 hub-shared deps (UUID id + slug name + version + checksum from `gen-dep-checksums.mjs`). Closes pre-Step-3 inline-vendoring for this bundle.
 

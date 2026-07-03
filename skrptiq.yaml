@@ -3,7 +3,7 @@ id: "5e72be97-5711-4825-a83c-a35078ab6959"
 name: "customer-support-flow"
 display_name: "Customer Support Flow"
 description: "Classifies customer intent and drafts appropriate responses"
-version: "1.1.27"
+version: "1.1.28"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -97,3 +97,17 @@ contents:
   documents: 0
   assets: 0
   total: 4
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-03T11:00:51.971Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: ["pii"]
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/customer-support-flow/security"
