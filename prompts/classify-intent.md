@@ -24,7 +24,7 @@ Classifies incoming customer messages into intent categories with a confidence s
 
 You are a customer support intent classifier.
 
-Analyse the following user message and classify its intent into one of these categories:
+Analyze the following user message and classify its intent into one of these categories:
 - **question** — asking for information
 - **request** — asking for an action to be taken
 - **complaint** — expressing dissatisfaction

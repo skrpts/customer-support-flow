@@ -79,7 +79,7 @@ This workflow processes incoming customer messages by first classifying the inte
 
 ### Stage 1: Classify Intent
 
-Invoke the **intent-classification** skill to analyse the customer message and determine whether it is a question, request, complaint, feedback, or other.
+Invoke the **intent-classification** skill to analyze the customer message and determine whether it is a question, request, complaint, feedback, or other.
 
 ### Stage 2: Draft Response
 

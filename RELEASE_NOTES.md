@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.29
+GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
+
 ## v1.1.28
 GH#745 — declare per-step `output: {name, type}` on every execution step (intent/text, draft_response/text, toned_response/text, polished_response/text, structured_data/json, formatted_response/text, masked_response/text). Lights up the #744 rich flow-map. Content-only; no bindings or logic changes.
 
@@ -19,4 +22,4 @@ Bundle re-signed with canonical engine signing pipeline (Wave 2 migration).
 Signature fix — RELEASE_NOTES.md now included in integrity checksum.
 
 ## v1.1.22
-Initial catalogue release with full structural and content-quality validation. All scanner checks pass.
+Initial catalog release with full structural and content-quality validation. All scanner checks pass.
