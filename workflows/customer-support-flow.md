@@ -64,7 +64,10 @@ execution:
     context:
       extraction_fields: "Key findings, dates, names, action items"
   - skill: "format-conversion"
-    step_type: "local.transform"
+    prompt: "format-conversion"
+    step_type: "content"
+    context:
+      target_format: "markdown"
     output: { name: "formatted_response", type: "text" }
   - skill: "pii-masking"
     step_type: "local.transform"
@@ -95,7 +98,7 @@ Extract structured data from the conversation: key findings, dates, names, and a
 
 ### Stage 5: Format Conversion + PII Masking
 
-Convert the output to the required format and mask any personally identifiable information before storage or handoff.
+Convert the extracted data to Markdown — the format this step declares — and mask any personally identifiable information before storage or handoff.
 
 ## Output
 
