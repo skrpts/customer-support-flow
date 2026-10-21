@@ -3,7 +3,7 @@ id: "5e72be97-5711-4825-a83c-a35078ab6959"
 name: "customer-support-flow"
 display_name: "Customer Support Flow"
 description: "Classifies customer intent and drafts appropriate responses"
-version: "1.1.30"
+version: "1.1.31"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -65,8 +65,8 @@ dependencies:
     checksum: "sha256:18783015383c041de9c3fdaa191b79172ab534348448c20c74f9a967ab4dd917"
   - id: "1bfde5c8-fdb1-4d13-ac87-0076e5b4c561"
     name: "pii-masking"
-    version: 1.0.1
-    checksum: "sha256:2bc7d59d9f154dfdc0169d5cff33d76f29c113fd06fa4731ea6feb110600da92"
+    version: 1.0.4
+    checksum: "sha256:4055472b25034b7fef6165475236145b8fbaeac86554eb49230439e12ce85e88"
   - id: "9b1771e0-39b0-4fbc-8d45-738f51b6083a"
     name: "polish-language"
     version: 1.0.1
@@ -100,7 +100,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-10-15T18:36:02.001Z"
+  scanned_at: "2026-10-21T21:55:56.061Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

@@ -70,8 +70,13 @@ execution:
       target_format: "markdown"
     output: { name: "formatted_response", type: "text" }
   - skill: "pii-masking"
-    step_type: "local.transform"
+    prompt: "pii-masking"
+    step_type: "content"
     output: { name: "masked_response", type: "text" }
+    bindings:
+      source:
+        from_step: "Format Conversion"
+        field: output
 ---
 
 ## Overview

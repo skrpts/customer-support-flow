@@ -1,5 +1,10 @@
 # Release Notes
 
+## v1.1.31
+GH#1100 wave B — run the PII masking step instead of silently not running it.
+
+The step named `skill: pii-masking` with `step_type: local.transform`, which is not a step type the engine can execute, and the shared bundle shipped no prompt to run — so the masking stage reached no handler. `_shared/pii-masking@1.0.4` now ships the prompt (GH#1100 bucket 1), so the step becomes a real content step: `prompt: pii-masking`, and the content to mask is wired explicitly with `bindings: source` from `Format Conversion` rather than read positionally. Dependency pin 1.0.1 → 1.0.4, checksum resolved against live Hub rather than transcribed.
+
 ## v1.1.30
 GH#1070 — the format-conversion step could not run. It now runs, and converts the extracted conversation data into a readable form.
 
