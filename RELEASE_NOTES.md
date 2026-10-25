@@ -1,5 +1,24 @@
 # Release Notes
 
+## v1.1.32
+GH#1100 consumer wave (batch 3) — declare the data flow this workflow was resolving positionally.
+
+Each stage below now receives its input through a declared `bindings:` entry instead of `default_from_previous`, which K-073 revoked. **The value is unchanged**: every binding names the step that immediately precedes it, which is exactly what the positional default resolved to. What changes is that the dependency is stated rather than inferred from position, so a reorder can no longer silently feed a stage the wrong artefact.
+
+Bindings added:
+  `adapt-tone` ← `from_step: "Response Drafting"` (step 3)
+  `polish-language` ← `from_step: "Tone Adaptation"` (step 4)
+  `extract-structured-data` ← `from_step: "Language Polish"` (step 5)
+
+Dependency pins moved to the published versions that declare these slots:
+  `adapt-tone` 1.0.3 → 1.0.4
+  `draft-response` 1.0.3 → 1.0.4
+  `extract-structured-data` 1.0.1 → 1.0.3
+  `format-conversion` 1.0.4 → 1.0.5
+  `intent-classification` 1.0.1 → 1.0.2
+  `polish-language` 1.0.1 → 1.0.7
+  `structured-data-extraction` 1.0.1 → 1.0.2
+
 ## v1.1.31
 GH#1100 wave B — run the PII masking step instead of silently not running it.
 

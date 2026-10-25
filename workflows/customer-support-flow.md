@@ -50,6 +50,10 @@ execution:
     output: { name: "toned_response", type: "text" }
     context:
       target_tone: "Professional and approachable"
+    bindings:
+      source:
+        from_step: "Response Drafting"
+        field: output
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
@@ -57,12 +61,20 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "Tone Adaptation"
+        field: output
   - skill: "structured-data-extraction"
     prompt: "extract-structured-data"
     step_type: "synthesis"
     output: { name: "structured_data", type: "json" }
     context:
       extraction_fields: "Key findings, dates, names, action items"
+    bindings:
+      source:
+        from_step: "Language Polish"
+        field: output
   - skill: "format-conversion"
     prompt: "format-conversion"
     step_type: "content"
